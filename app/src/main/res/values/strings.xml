@@ -8,6 +8,9 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="third_fragment_label">Third Fragment</string>
     <string name="next">Next</string>
+    <string name="cykl_1">Cykl 1</string>
+    <string name="cykl_2">Cykl 2</string>
+    <string name="cykl_3">Cykl 3</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>

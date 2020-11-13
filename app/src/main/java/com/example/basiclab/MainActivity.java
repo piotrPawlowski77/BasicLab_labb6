@@ -46,19 +46,16 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        String message = "";
+
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Snackbar.make(getWindow().getDecorView(), "Nacisnales settings", Snackbar.LENGTH_LONG).setAction("Action",null).show();
-            return true;
+        switch (id) {
+            case R.id.action_settings: message = "Settings"; break;
+            case R.id.option_1: message = "Opcja 1"; break;
+            case R.id.option_2: message = "Opcja 2"; break;
         }
-        if(id == R.id.option_1){
-            Snackbar.make(getWindow().getDecorView(), "Nacisnales opcje 1", Snackbar.LENGTH_LONG).setAction("Action",null).show();
-            return true;
-        }
-        if(id == R.id.option_2){
-            Snackbar.make(getWindow().getDecorView(), "Nacisnales opcje 2", Snackbar.LENGTH_LONG).setAction("Action",null).show();
-            return true;
-        }
+
+        Snackbar.make(findViewById(R.id.rootLayout), message, Snackbar.LENGTH_LONG).show();
 
         return super.onOptionsItemSelected(item);
     }
